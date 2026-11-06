@@ -10,7 +10,7 @@ Na primeira execução do comando `sam local invoke`, o tempo total foi maior po
 
 Ao chamar a função repetidas vezes com o `curl` normal, a variável `invocacaoNesteAmbiente` voltava sempre para 1. Isso acontece porque a arquitetura Serverless é stateless (sem estado), destruindo o ambiente após cada chamada. Quando reiniciei o servidor com a flag `--warm-containers LAZY`, a máquina foi mantida viva entre as chamadas, permitindo que a variável subisse para 2 e 3.
 
-![Evidência 2 - Servidor HTTP](evidencias/2-servidor-http.png)
+![Evidência 2 - Servidor HTTP](evidencias/2-servidor-http.png.png)
 
 ![Evidência 3 - Warm Containers](evidencias/3-warm-containers.png)
 
